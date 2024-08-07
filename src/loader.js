@@ -13,13 +13,13 @@ async function readCSV(path) {
 
 // reads csv in text format and returns an array of row objects
 function parseCSV(csv) {
-    const rows = csv.split("\r\n")
-    const headers = rows[0].split(",")
+    const rows = csv.split("\n")
+    const headers = rows[0].trim().split(",")
 
     const processedRows = []
 
     for (let i=1; i<rows.length; i++) {
-        const row = rows[i].split(",")
+        const row = rows[i].trim().split(",")
         const rowObj = {}
 
         for (let j=0; j<headers.length; j++) {
