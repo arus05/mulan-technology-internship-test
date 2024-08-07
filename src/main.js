@@ -43,7 +43,6 @@ async function main() {
     const t2BodyEl = createBody(t2Rows)
 
     table2.append(t2HeaderEl, t2BodyEl)
-
 }
 
 main()
