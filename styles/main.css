@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding-inline: 0.5em;
+}
+
+/* tr {
+    border: 1px solid black;
+    background-color: yellow;
+} */
+
+.container {
+    padding: 1em;
+    height: 100dvh;
+}
